@@ -96,10 +96,10 @@ void MyHandleNoteOn(byte channel, byte pitch, byte velocity) {
 // ******** ON Pedal ********  
   if (channel == decoder_channel) {
    switch (pitch) {
-  case 36:
+     case 36:
     digitalWrite (A1, HIGH);
     break;
-  case 37:
+    case 37:
     digitalWrite (A0, HIGH);
     break;
     case 38:
@@ -279,24 +279,24 @@ if (channel == decoder_pryncypal8_channel) {
     break;
 
     case 65:
-    digitalWrite (25, HIGH);
-    break;
-    case 66:
-    digitalWrite (24, HIGH);
-    break;
-
-    case 67:
     digitalWrite (27, HIGH);
     break;
-    case 68:
+    case 66:
     digitalWrite (26, HIGH);
     break;
 
-    case 69:
+    case 67:
     digitalWrite (29, HIGH);
     break;
-    case 70:
+    case 68:
     digitalWrite (28, HIGH);
+    break;
+
+    case 69:
+    digitalWrite (31, HIGH);
+    break;
+    case 70:
+    digitalWrite (30, HIGH);
     break;
      default:
     // if nothing else matches, do the default
@@ -308,7 +308,7 @@ if (channel == decoder_pryncypal8_channel) {
 // ******** ON coppell Pedal to Pryncypał 8 man I ********
 if (channel == decoder_copell_ItoP_channel) {
    switch (pitch) {
- case 41:
+    case 41:
     digitalWrite (3, HIGH);
     break;
     case 42:
@@ -383,24 +383,24 @@ if (channel == decoder_copell_ItoP_channel) {
     break;
 
     case 65:
-    digitalWrite (25, HIGH);
-    break;
-    case 66:
-    digitalWrite (24, HIGH);
-    break;
-
-    case 67:
     digitalWrite (27, HIGH);
     break;
-    case 68:
+    case 66:
     digitalWrite (26, HIGH);
     break;
 
-    case 69:
+    case 67:
     digitalWrite (29, HIGH);
     break;
-    case 70:
+    case 68:
     digitalWrite (28, HIGH);
+    break;
+
+    case 69:
+    digitalWrite (31, HIGH);
+    break;
+    case 70:
+    digitalWrite (30, HIGH);
     break;
      default:
     // if nothing else matches, do the default
@@ -604,24 +604,24 @@ if (channel == decoder_pryncypal8_channel) {
     break;
 
     case 65:
-    digitalWrite (25, LOW);
-    break;
-    case 66:
-    digitalWrite (24, LOW);
-    break;
-
-    case 67:
     digitalWrite (27, LOW);
     break;
-    case 68:
+    case 66:
     digitalWrite (26, LOW);
     break;
 
-    case 69:
+    case 67:
     digitalWrite (29, LOW);
     break;
-    case 70:
+    case 68:
     digitalWrite (28, LOW);
+    break;
+
+    case 69:
+    digitalWrite (31, LOW);
+    break;
+    case 70:
+    digitalWrite (30, LOW);
     break;
      default:
     // if nothing else matches, do the default
@@ -708,24 +708,24 @@ if (channel == decoder_copell_ItoP_channel) {
     break;
 
     case 65:
-    digitalWrite (25, LOW);
-    break;
-    case 66:
-    digitalWrite (24, LOW);
-    break;
-
-    case 67:
     digitalWrite (27, LOW);
     break;
-    case 68:
+    case 66:
     digitalWrite (26, LOW);
     break;
 
-    case 69:
+    case 67:
     digitalWrite (29, LOW);
     break;
-    case 70:
+    case 68:
     digitalWrite (28, LOW);
+    break;
+
+    case 69:
+    digitalWrite (31, LOW);
+    break;
+    case 70:
+    digitalWrite (30, LOW);
     break;
      default:
     // if nothing else matches, do the default
